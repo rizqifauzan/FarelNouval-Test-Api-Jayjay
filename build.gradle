@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.farelgradle'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.7.0'
+    implementation 'com.squareup.okio:okio-jvm:3.6.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+}
+
+test {
+    useTestNG()
+}
